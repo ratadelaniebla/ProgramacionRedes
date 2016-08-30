@@ -1,0 +1,158 @@
+* {
+	font-family: Arial, sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+h1 {
+	margin: 1em 0;
+	text-align: center;
+}
+
+#container {
+	margin: 0 auto;
+	width: 50%;
+}
+
+#container input#tab-1 {
+	height: 2.5em;
+	visibility: hidden;
+}
+
+#container input#tab-2 {
+	height: 2.5em;
+	visibility: hidden;
+}
+
+#container input {
+	height: 2.5em;
+	width: 15em;
+}
+
+#container select {
+	height: 2.5em;
+}
+
+#container button {
+	height: 2.5em;
+	width: 15em;
+}
+
+#container label {
+	background: #f9f9f9;
+	border-radius: .25em .25em 0 0;
+	color: #888;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 1em;
+	height: 2.5em;
+	line-height: 2.5em;
+	margin-right: .25em;
+	padding: 0 1.5em;
+	text-align: center;
+}
+
+#container input:hover+label {
+	background: #ddd;
+	color: #666;
+}
+
+#container input:checked+label {
+	background: #f1f1f1;
+	color: #444;
+	position: relative;
+	z-index: 6;
+}
+
+#content {
+	background: #f1f1f1;
+	border-radius: 0 .25em .25em .25em;
+	min-height: 20em;
+	/* 	position: relative; */
+	width: 100%;
+	z-index: 5;
+}
+
+#content div {
+	opacity: 0;
+	padding: 1.5em;
+	/* 	position: relative; */
+	z-index: -100;
+}
+
+#content-1 p {
+	clear: both;
+	margin-bottom: 1em;
+}
+
+#content-1 p.left img {
+	float: left;
+	margin-right: 1em;
+}
+
+#content-1 p.last {
+	margin-bottom: 0;
+}
+
+#content-2 p {
+	float: left;
+	width: 48.5%;
+}
+
+#content-2 p.column-right {
+	margin-left: 3%;
+}
+
+#content-2 p img {
+	display: block;
+	margin: 0 auto 1em auto;
+}
+
+#content-3 p, #content-3 ul {
+	margin-bottom: 1em;
+}
+
+#content-3 ul {
+	margin-left: 2em;
+}
+
+#container input#tab-1:checked ~ #content #content-1, #container input#tab-2:checked 
+	 ~ #content #content-2, #container input#tab-3:checked ~ #content #content-3
+	{
+	opacity: 1;
+	z-index: 100;
+}
+#content-2 table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 15px;
+	width: auto;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+#content-2 th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 2px;
+	background: #b9c9fe;
+	border-top: 4px solid #aabcfe;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+
+#content-2 td {
+	padding: 8px;
+	background: #e8edff;
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid transparent;
+}
+
+#content-2 tr:hover td {
+	background: #d0dafd;
+	color: #339;
+}
