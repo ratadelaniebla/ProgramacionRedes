@@ -24,6 +24,7 @@
 	estudiante.add(n_vMatricula);
 	try{
 		ProcesaEstudiante.ingresaEstudiante(estudiante);
+		System.out.println("Se ingreso la matricula del estudiante "+estudiante.get(0));
 		%><center>
 	<h1>Estudiante Guardado</h1>
 </center>
